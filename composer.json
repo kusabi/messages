@@ -1,0 +1,16 @@
+{
+    "name": "kusabi/messages",
+    "description": "A library implementing a response message manager",
+    "type": "library",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Christian Harvey",
+            "email": "kusabi.software@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php":"~7.2"
+    }
+}
