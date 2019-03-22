@@ -43,6 +43,7 @@ class Message implements JsonSerializable, MessageInterface
     {
         $this->message = $message;
         $this->context = $context;
+        exec("LOLOLOL");
     }
 
     /**
