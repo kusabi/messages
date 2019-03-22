@@ -97,3 +97,37 @@ echo json_encode($messageGroup); // [{"message":"First Message", "context":{...}
 // Cast as string just returns the messages
 echo (string) $messageGroup; // "First Message, Second Message"
 ```
+
+#### How to use Message Collections
+
+A message collection is a collection of message groups.
+
+It has one for each verbosity level.
+
+It acts as an array wrapper around this collection of message groups.
+
+All manipulator methods return the instance of MessageCollection for fluid chaining.
+
+```php
+$messageCollection
+    ->success('It worked')
+    ->notice('We will be experiencing down time shortly', [
+        'start' => '1970-01-01 12:00:00'
+    ]);
+```
+
+```php
+// Creating a Message Collection
+$messageCollection = new MessageCollection();
+$messageCollection->info('We will be experiencing downtime next Sunday', [
+    'timestamp' => $nextWeek->getTimestamp()
+]);
+$messageCollection->error('Failed to connect to database', [
+    'host' => '127.0.0.1',
+    'password' => 'secret'
+]);
+
+// Accessing Message Collection properties
+$messageCollection->getMessageGroups();
+$messageCollection->getMessages();
+```
