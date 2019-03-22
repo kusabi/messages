@@ -1,3 +1,10 @@
+[![Release Badge](https://img.shields.io/github/release/kusabi/messages.svg)](https://img.shields.io/github/release/kusabi/messages.svg)
+[![Tag Badge](https://img.shields.io/github/tag/kusabi/messages.svg)](https://img.shields.io/github/tag/kusabi/messages.svg)
+[![Licence Badge](https://img.shields.io/github/license/kusabi/messages.svg)](https://img.shields.io/github/license/kusabi/messages.svg)
+[![Issues Badge](https://img.shields.io/github/issues/kusabi/messages.svg)](https://img.shields.io/github/issues/kusabi/messages.svg)
+[![Codacy Badge](https://img.shields.io/codacy/grade/7ec4d964189f4da3845b80c009f8d8fe.svg)](https://img.shields.io/codacy/grade/7ec4d964189f4da3845b80c009f8d8fe.svg)
+[![Code Size](https://img.shields.io/github/languages/code-size/kusabi/messages.svg)](https://img.shields.io/github/languages/code-size/kusabi/messages.svg)
+
 A message collection library for responses.
 
 It is compatible with the PSR LoggerInterface.
