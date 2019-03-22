@@ -55,3 +55,45 @@ echo json_encode($message); // {"message":"Changed the message", "context":{...}
 // Cast as string just returns the message
 echo (string) $message; // "Changed the message"
 ```
+
+#### How to use Message Groups
+
+A message group is a collection of messages.
+
+It is an array wrapper around this collection of message.
+
+All manipulator methods return the instance of MessageGroup for fluid chaining.
+
+```php
+$messageGroup->addMessage('Success', [])->clearMessages()->count();
+```
+
+```php
+// Creating a Message Group
+$messageGroup = new MessageGroup();
+$messageGroup->addMessage('Test Message', [
+    'context' => 1
+]);
+$messageGroup->addMessageInstance(
+    new Message('Test message')
+);
+$messageGroup[] = new Message('Test');
+
+// Clearing the message group
+$messageGroup->setMessages([]);
+$messageGroup->clearMessages();
+
+// Accessing Message Group properties
+if (count($messageGroup) > 0) {
+    foreach($messageGroup as $message) {
+        echo $message->getMessage();
+    }
+    $messageGroup->clearMessages();
+}
+
+// Json encode the message group
+echo json_encode($messageGroup); // [{"message":"First Message", "context":{...}},{"message":"Second Message", "context":{...}}]
+
+// Cast as string just returns the messages
+echo (string) $messageGroup; // "First Message, Second Message"
+```
