@@ -12,12 +12,18 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php":"~7.2"
+        "php":"~7.2",
+        "ext-json": "*"
     },
     "require-dev": {
         "symfony/var-dumper": "^4.2",
         "phan/phan": "^1.2",
         "friendsofphp/php-cs-fixer": "^2.14",
         "codeception/codeception": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kusabi\\Messages\\": "src/"
+        }
     }
 }
