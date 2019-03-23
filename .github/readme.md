@@ -9,7 +9,7 @@ A message collection library for responses.
 
 It is compatible with the PSR LoggerInterface.
 
-#### How to use Messages
+# How to use Messages
 
 A message is the smallest unit in the library.
 
@@ -63,7 +63,7 @@ echo json_encode($message); // {"message":"Changed the message", "context":{...}
 echo (string) $message; // "Changed the message"
 ```
 
-#### How to use Message Groups
+# How to use Message Groups
 
 A message group is a collection of messages.
 
@@ -105,7 +105,7 @@ echo json_encode($messageGroup); // [{"message":"First Message", "context":{...}
 echo (string) $messageGroup; // "First Message, Second Message"
 ```
 
-#### How to use Message Collections
+# How to use Message Collections
 
 A message collection is a collection of message groups.
 
