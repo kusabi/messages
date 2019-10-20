@@ -6,7 +6,7 @@ Before pushing changes ensure you run the following commands (and they return su
 
 ```bash
 vendor/bin/php-cs-fixer fix
-vendor/bin/codecept run
+vendor/bin/phpunit
 vendor/bin/phan
 ```
 
