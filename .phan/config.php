@@ -21,7 +21,7 @@ return [
     // your application should be included in this list.
     'directory_list' => [
         'src',
-        'vendor'
+        'vendor/psr/log'
     ],
 
     // A directory list that defines files that will be excluded
@@ -35,7 +35,7 @@ return [
     //       party code, directories containing that code
     //       should be added to both the `directory_list`
     //       and `exclude_analysis_directory_list` arrays.
-    "exclude_analysis_directory_list" => [
+    'exclude_analysis_directory_list' => [
         'vendor/'
     ],
 ];
