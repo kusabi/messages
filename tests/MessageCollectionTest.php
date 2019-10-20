@@ -1,13 +1,13 @@
 <?php
 
-namespace Tests\Unit;
+namespace Tests;
 
 use ArrayAccess;
 use Countable;
 use InvalidArgumentException;
 use IteratorAggregate;
 use JsonSerializable;
-use Kusabi\Messages\Exceptions\InvalidVerbosityException;
+use Kusabi\Messages\InvalidVerbosityException;
 use Kusabi\Messages\MessageCollection;
 use Kusabi\Messages\MessageCollectionInterface;
 use Kusabi\Messages\MessageGroup;
