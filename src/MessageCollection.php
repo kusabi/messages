@@ -8,7 +8,6 @@ use Countable;
 use InvalidArgumentException;
 use IteratorAggregate;
 use JsonSerializable;
-use Kusabi\Messages\Exceptions\InvalidVerbosityException;
 
 /**
  * A message collection is a collection of message groups in a format ready for responses.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit;
+namespace Tests;
 
 use JsonSerializable;
 use Kusabi\Messages\Message;

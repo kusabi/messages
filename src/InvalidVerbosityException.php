@@ -1,6 +1,6 @@
 <?php
 
-namespace Kusabi\Messages\Exceptions;
+namespace Kusabi\Messages;
 
 use InvalidArgumentException;
 use Throwable;

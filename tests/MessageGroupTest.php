@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit;
+namespace Tests;
 
 use ArrayAccess;
 use Countable;
