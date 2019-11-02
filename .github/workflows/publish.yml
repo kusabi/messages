@@ -1,0 +1,18 @@
+name: Publish the code coverage to update the badges
+on:
+  push:
+    branches:
+      - master
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Composer update
+        run: composer update
+      - name: Unit Tests
+        run: composer test
+      - name: Publish results
+        env:
+          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
+        run: composer publish

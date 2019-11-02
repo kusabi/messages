@@ -1,0 +1,13 @@
+name: Validate commits and pull requests
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Composer update
+        run: composer update
+      - name: Static analysis
+        run: composer analyse
+      - name: Unit Tests
+        run: composer test

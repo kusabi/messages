@@ -32,5 +32,13 @@
         "psr-4": {
             "Tests\\": "tests/"
         }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phan --allow-polyfill-parser",
+        "clean": "vendor/bin/php-cs-fixer fix",
+        "test": "vendor/bin/phpunit",
+        "prepare": "composer analyse && composer clean && composer test",
+        "verify": "composer analyse && composer test",
+        "publish": "vendor/bin/codacycoverage clover build/coverage/clover.xml"
     }
 }
